@@ -2,6 +2,10 @@
 
 ### 1. Data analysis and exploration
 - **Dataset**: CIFAR-10 (50k train, 10k test; 10 classes).
+
+{'airplane': 5000, 'automobile': 5000, 'bird': 5000, 'cat': 5000, 'deer': 5000, 'dog': 5000, 'frog': 5000, 'horse': 5000, 'ship': 5000, 'truck': 5000}
+
+
 - **Class balance**: Uniform (5,000 images per class in training set).
 - **Visualization**: Sample grids are displayed to inspect image variety and labels.
 
@@ -53,20 +57,8 @@ Re-run the notebook to reproduce or extend these results; accuracy may vary with
 - **Training setup**: SGD (lr=0.01, momentum=0.9), batch size 128, standard augmentations.
 - **Observed test accuracy (example run)**:
 
-Model acheived highest accuracy of 83.19 at epoch 7 then started to degrade on test. 
+Model acheived highest accuracy of 87.94% at epoch 15. The model looks to be learning stopped the run for now
 
-| Epoch | Test loss | Test accuracy (%) |
-|---|---|---|
-| 0 | 1.1779 | 58.80 |
-| 1 | 0.9777 | 66.04 |
-| 2 | 0.7505 | 73.66 |
-| 3 | 0.6522 | 77.30 |
-| 4 | 0.6335 | 79.00 |
-| 5 | 0.5577 | 81.25 |
-| 6 | 0.5432 | 82.54 |
-| 7 | 0.4903 | 83.19 |
-| 8 | 0.5554 | 81.73 |
-| 9 | 0.5250 | 82.48 |
 
 - **Raw Logs**:
 
@@ -119,3 +111,33 @@ EPOCH: 9
 Loss=0.6129117608070374 Batch_id=390 Accuracy=86.99: 100%|██████████| 391/391 [03:33<00:00,  1.83it/s]
 
 Test set: Average loss: 0.5250, Accuracy: 8248/10000 (82.48%)
+
+EPOCH: 10
+Loss=0.36804574728012085 Batch_id=390 Accuracy=87.79: 100%|██████████| 391/391 [03:33<00:00,  1.83it/s]
+
+Test set: Average loss: 0.4105, Accuracy: 8649/10000 (86.49%)
+
+EPOCH: 11
+Loss=0.3752756118774414 Batch_id=390 Accuracy=88.57: 100%|██████████| 391/391 [03:33<00:00,  1.83it/s]
+
+Test set: Average loss: 0.4461, Accuracy: 8536/10000 (85.36%)
+
+EPOCH: 12
+Loss=0.24930736422538757 Batch_id=390 Accuracy=89.34: 100%|██████████| 391/391 [03:33<00:00,  1.84it/s]
+
+Test set: Average loss: 0.4058, Accuracy: 8658/10000 (86.58%)
+
+EPOCH: 13
+Loss=0.4889381527900696 Batch_id=390 Accuracy=89.92: 100%|██████████| 391/391 [03:33<00:00,  1.83it/s]
+
+Test set: Average loss: 0.3501, Accuracy: 8756/10000 (87.56%)
+
+EPOCH: 14
+Loss=0.33045631647109985 Batch_id=390 Accuracy=90.32: 100%|██████████| 391/391 [03:33<00:00,  1.83it/s]
+
+Test set: Average loss: 0.3812, Accuracy: 8725/10000 (87.25%)
+
+EPOCH: 15
+Loss=0.24605686962604523 Batch_id=390 Accuracy=90.79: 100%|██████████| 391/391 [03:33<00:00,  1.83it/s]
+
+Test set: Average loss: 0.3817, Accuracy: 8794/10000 (87.94%)
