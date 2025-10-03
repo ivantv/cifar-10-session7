@@ -53,6 +53,8 @@ Re-run the notebook to reproduce or extend these results; accuracy may vary with
 - **Training setup**: SGD (lr=0.01, momentum=0.9), batch size 128, standard augmentations.
 - **Observed test accuracy (example run)**:
 
+Model acheived highest accuracy of 83.19 at epoch 7 then started to degrade on test. 
+
 | Epoch | Test loss | Test accuracy (%) |
 |---|---|---|
 | 0 | 1.1779 | 58.80 |
@@ -66,8 +68,7 @@ Re-run the notebook to reproduce or extend these results; accuracy may vary with
 | 8 | 0.5554 | 81.73 |
 | 9 | 0.5250 | 82.48 |
 
-
-- **Raw logs **:
+- **Raw Logs**:
 
 EPOCH: 0
 Loss=1.0834534168243408 Batch_id=390 Accuracy=47.79: 100%|██████████| 391/391 [03:38<00:00,  1.79it/s]
