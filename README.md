@@ -57,7 +57,7 @@ Re-run the notebook to reproduce or extend these results; accuracy may vary with
 - **Training setup**: SGD (lr=0.01, momentum=0.9), batch size 128, standard augmentations.
 - **Observed test accuracy (example run)**:
 
-Model acheived highest accuracy of 87.94% at epoch 15. The model looks to be learning stopped the run for now
+Model acheived highest accuracy of 87.94% at epoch 15. The model looks to be learning very slowly stopped the run.
 
 
 - **Raw Logs**:
